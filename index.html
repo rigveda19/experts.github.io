@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>StudyExperts</title>
+    <style>
+        .b
+        {
+            padding-right:10px ;
+            padding-left: 15px;
+            background-color:cadetblue;
+        }
+
+        .a  
+        {
+           /* height: 600px;
+            width: 1000px;   */
+            width: 100%;
+            max-width: 1600px;
+            height: auto;
+        }
+        .c
+        {
+            text-align: center;
+            line-height: 5px;
+        }
+        .d
+        {
+            display: inline-flex;
+            text-align: center;
+            
+        }
+        .card
+        {
+            /*padding-right: 42px;*/
+            margin: 0 50px 30px 80px;
+            background-color: brown;
+        }
+        .card-img-top
+        {
+            position:relative;
+            
+        }
+        .f
+        {
+            padding-top: 6px;
+            background-color: cadetblue;
+        }
+        .h
+    {
+      margin: 20px;
+      padding: 250px,0px,0,150px;
+    }
+    
+    #g
+    {
+        background-color: cadetblue;  
+      padding-bottom: 5px;
+      margin: 0;
+    }
+    .ta
+    {
+      img srcset: "large.jpg 1024w,medium.jpg 640w,small.jpg 320w";
+      sizes: "(min-width: 36em) 33.3vw,100vw"
+    }
+   /* .responsive {
+  width: 100%;
+  height: auto;*/
+}
+/* card start*/
+
+       @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+    .tb
+    {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+  min-height: 100vh;
+  background-color: cadetblue/*#a9c9ff*/;
+/*background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);*/
+}
+
+  .containe {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+    .car {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      margin: 0 auto;
+      background: #000;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  }
+
+     .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+        &.face1 {
+          box-sizing: border-box;
+          padding: 20px;
+        }
+          h2 {
+            margin: 0;
+            padding: 0;
+          }
+
+          .java {
+            background-color: #fffc00;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .python {
+            background-color: #00fffc;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .cSharp {
+            background-color: #fc00ff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        
+
+        &.face2 {
+          transition: 0.5s;
+        }
+          h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 10em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+          }
+        
+
+    .car:hover .face.face2 {
+      height: 60px;
+    }
+      h2 {
+        font-size: 2em;
+      }
+    
+
+    .car:nth-child(1) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fffc00 0%,
+        #fc00ff 45%,
+        #00fffc 100%
+      );
+      border-radius: 15px;
+    }
+
+    .car:nth-child(2) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fc00ff 0%,
+        #00fffc 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+    }
+
+    .car:nth-child(3) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #00fffc 0%,
+        #fc00ff 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+    }
+/*card end*/
+    </style>
+</head>
+<body>
+
+    <!----header start-->
+    <div class="b-example-divider"></div>
+
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#q" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#j" class="nav-link px-2 text-white">Features</a></li>
+            <li><a href="#i" class="nav-link px-2 text-white">Pricing</a></li>
+            <li><a href="#g" class="nav-link px-2 text-white">Contact us</a></li>
+            <li><a href="#r" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2"> <!--- <a href="login.html">-->Login </a></button>
+            <button type="button" class="btn btn-warning"><!---<a href="regi.html">--->Sign-up</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!---header end-->
+    <!--carsouel start-->
+   
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="istockphoto-1357880802-170667a.jpg" height="500" width="800" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="istockphoto-1164810926-170667a.jpg" height="500" width="800" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item">
+      <img src="istockphoto-963370628-170667a.jpg" height="500" width="800" class="d-block w-100" alt="...">
+     
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!--carsouel end-->
+      </div>
+    </div>
+    <!--card start-->
+      <div class="tb">
+        
+            <div class="containe">
+
+  <div class="car">
+    <div class="face face1">
+      <div class="content">
+        <span class="stars"></span>
+        <h2 class="java">Send Questions</h2>
+        <p class="java"> you just need to wait for few minutes to get your doubt cleared and tell your friends about how it works and our give your review..</p>
+        <form>
+          <textarea></textarea>
+        <button>Send Question  </button>
+        </form>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>01</h2>
+    </div>
+  </div>
+
+  <div class="car">
+    <div class="face face1">
+      <div class="content">
+        <span class="stars"></span>
+        <h2 class="python">Our Experts</h2>
+        <p class="python">Shell's experienced experts work across all sectors, all over the world, to deliver the best lubrication solutions possible for customers.</p>
+        <button>consult with our Experts</button>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>02</h2>
+    </div>
+  </div>
+
+  <div class="car">
+    <div class="face face1">
+      <div class="content">
+        <span class="stars"></span>
+        <h2 class="cSharp">Quick answers</h2>
+        <p class="cSharp">quick answer is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+        <button>Quick answers</button>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>03</h2>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+  
+    <!--card end-->
+
+
+    <!--product start-->
+
+        <div class="e">
+          <div id="r">
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 py-3">
+                    <h2 class="display-5">We are StudyExperts.</h2>
+                    <p class="lead">StudyExperts aims to be an Indian education technology (EduTech) website which operates an online problem solving platform for students to post doubt/questions and peer experts can help them solve the doubt in exchange for .</p>
+                  </div>
+                  <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> <img src="left-image.svg">
+                  </div>
+                </div>
+                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h2 class="display-5">We can help you to grow.</h2>
+                    <p class="lead">Get personalized help from our subject matter experts and we break it down into step-by-step explanations.</p>
+                  </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="right-image.svg" alt=""> </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    <!---product end--->
+    <!---priceing start-->
+    <main>
+        <div id="i">
+            <div class="c">
+            <h3>PRICING</h3>
+            </div>
+        <div class="f">
+            
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Free</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>10 users included</li>
+                      <li>Ask 12 questions</li>
+                      <li>Value of ₹0</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Pro</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>20 users included</li>
+                      <li>10 GB of storage</li>
+                      <li>Ask 25 questions</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>30 users included</li>
+                      <li>15 GB of storage</li>
+                      <li>Ask 100 questions</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary" href="#g">Contact us</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--price end-->
+    <!--contact start-->
+    <div id="g">
+    <div class="h">
+      <h1>CONTACT US</h1>
+    <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01"  required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02"  required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div>
+    PASSWORD<input type="password" class="form-control name="pwd">
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">gender</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option> male</option>
+      <option> female</option>
+      <option> other</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Course</label>
+    <select class="form-select" id="validationCustom04" id="s" required>
+      <option selected disabled value="">Choose Course...</option>
+      <option>Send Questions</option>
+      <option>talk to Our Experts</option>
+      <option>Fast answer and win prices </option>
+    </select>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+</div>
+</div>
+    <!---contact end-->
+    <!--footer start-->
+    <div class="b-example-divider"></div>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+    
+    <!--footer end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>
